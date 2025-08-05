@@ -74,6 +74,7 @@ class MyCard extends StatelessWidget {
               ),
               SizedBox(width: 20),
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     title,
@@ -86,8 +87,6 @@ class MyCard extends StatelessWidget {
                   ),
                   SizedBox(height: 26),
                   Row(
-                    // 왜 정렬 적용이 안될까요?
-                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       for (var i = 0; i < 3; i++)
                         Padding(
